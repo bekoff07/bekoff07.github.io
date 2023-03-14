@@ -39,6 +39,7 @@ button{
 	border-radius: 4px;
 	transition: .6s;
 	overflow: hidden;
+	border-radius: 100px;
 }
 
 button:focus{
