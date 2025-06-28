@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Horror в сети</title>
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="header-bg">
+		<a href="#sec"><i id="logo" class="fa fa-power-off" aria-hidden="true"></i></a>
+		<audio id="sound" src="freamwork/h1.mp3"></audio>
+	</div>
+
+	<section id="sec">
+		<div class="container">
+			<h2>Для максимального эффекта <br>пройдите рекомендацию!</h2>
+			<ul>
+				<li><p>Найдите темную комнату</p></li>
+				<li><p>Холодная комната</p></li>
+				<li><p>Ночь после 23:00:00</p></li>
+				<li><p>Наушники или колонки</p></li>
+				<li><p>Проверьте звуки!</p></li>
+			</ul>
+		</div>
+		<div class="btn">
+      	<a href="section/main.html" target="_blan"><button type="button"><p>РИСКНУТЬ...</p></button></a>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				$('.header-bg').css("opacity", 1 -
+					$(window).scrollTop()/700)
+			})
+		})
+				var musicSpan = document.getElementById('logo');
+		musicSpan.addEventListener('click',function(){
+			document.getElementById('sound').play()
+		})
+	</script>
+</body>
+</html>
